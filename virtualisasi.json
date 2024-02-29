@@ -87,5 +87,57 @@
 			"langkah": 9,
 			"deskripsi": "Login kembali menggunakan username dan password baru."
 		}
-	]
+	],
+	"tutorial_koneksi_windows_ke_ubuntu": {
+		"judul": "Tutorial Koneksi dari Windows ke Ubuntu",
+		"deskripsi": "Langkah-langkah untuk terhubung dari mesin Windows ke mesin Ubuntu menggunakan SSH (Secure Shell).",
+		"langkah_langkah": [
+			{
+				"langkah": 1,
+				"deskripsi": "Pastikan Anda memiliki alamat IP mesin Ubuntu yang akan diakses dari mesin Windows."
+			},
+			{
+				"langkah": 2,
+				"deskripsi": "Buka Command Prompt di Windows."
+			},
+			{
+				"langkah": 3,
+				"deskripsi": "Jalankan perintah `ssh username@alamat_ip` di Command Prompt. Gantilah `username` dengan nama pengguna di mesin Ubuntu dan `alamat_ip` dengan alamat IP mesin Ubuntu."
+			},
+			{
+				"langkah": 4,
+				"deskripsi": "Anda akan diminta memasukkan password untuk akun pengguna di mesin Ubuntu. Masukkan password yang sesuai."
+			},
+			{
+				"langkah": 5,
+				"deskripsi": "Setelah berhasil login, Anda akan terhubung ke terminal mesin Ubuntu dari Windows."
+			}
+		]
+	},
+	"tutorial_ping_antar_virtual_machine": {
+		"judul": "Tutorial Tes Ping Antar Mesin Virtual",
+		"deskripsi": "Cara melakukan tes ping antara dua mesin virtual untuk memastikan konektivitas jaringan yang baik.",
+		"langkah_langkah": [
+			{
+				"langkah": 1,
+				"deskripsi": "Pastikan kedua mesin virtual sudah berjalan dan terhubung dalam jaringan yang sama."
+			},
+			{
+				"langkah": 2,
+				"deskripsi": "Buka terminal di masing-masing mesin virtual (Windows dan Ubuntu)."
+			},
+			{
+				"langkah": 3,
+				"deskripsi": "Di mesin Windows, jalankan perintah `ping alamat_ip_mesin_ubuntu`. Gantilah `alamat_ip_mesin_ubuntu` dengan alamat IP mesin Ubuntu."
+			},
+			{
+				"langkah": 4,
+				"deskripsi": "Di mesin Ubuntu, jalankan perintah `ping alamat_ip_mesin_windows`. Gantilah `alamat_ip_mesin_windows` dengan alamat IP mesin Windows."
+			},
+			{
+				"langkah": 5,
+				"deskripsi": "Perhatikan hasil ping untuk memastikan bahwa kedua mesin dapat saling terhubung dan tidak ada paket yang hilang."
+			}
+		]
+	}
 }
