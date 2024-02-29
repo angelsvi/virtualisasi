@@ -1,4 +1,56 @@
 {
-	"check_virtual" : "ada bro"
-}
+	"check_virtual" : "ada bro",
+		"tutorial instalasi": {
+		  "judul": "Tutorial Instalasi Ubuntu Server",
+		  "deskripsi": "Panduan langkah demi langkah untuk menginstal Ubuntu Server.",
+		  "langkah_langkah": [
+			{
+			  "langkah": 1,
+			  "deskripsi": "Unduh file gambar ISO Ubuntu Server dari situs web resmi Ubuntu."
+			},
+			{
+			  "langkah": 2,
+			  "deskripsi": "Buat media instalasi bootable menggunakan file ISO yang telah diunduh. Anda dapat menggunakan perangkat lunak seperti Rufus (di Windows) atau dd (di Linux)."
+			},
+			{
+			  "langkah": 3,
+			  "deskripsi": "Nyalakan komputer dan boot dari media instalasi yang telah Anda buat."
+			},
+			{
+			  "langkah": 4,
+			  "deskripsi": "Pilih opsi 'Install Ubuntu Server' dari menu boot."
+			},
+			{
+			  "langkah": 5,
+			  "deskripsi": "Pilih bahasa instalasi, zona waktu, dan bahasa papan ketik yang diinginkan."
+			},
+			{
+			  "langkah": 6,
+			  "deskripsi": "Atur koneksi jaringan jika diperlukan (opsional)."
+			},
+			{
+			  "langkah": 7,
+			  "deskripsi": "Pilih opsi untuk menginstal paket perangkat lunak tambahan jika diinginkan (opsional)."
+			},
+			{
+			  "langkah": 8,
+			  "deskripsi": "Pilih opsi 'Guided - use entire disk' atau sesuaikan partisi jika Anda memilih untuk melakukan konfigurasi manual."
+			},
+			{
+			  "langkah": 9,
+			  "deskripsi": "Buat akun pengguna dan atur nama host untuk server."
+			},
+			{
+			  "langkah": 10,
+			  "deskripsi": "Tunggu sampai proses instalasi selesai."
+			},
+			{
+			  "langkah": 11,
+			  "deskripsi": "Setelah selesai, Anda dapat reboot dan masuk ke sistem Ubuntu Server yang baru diinstal."
+			}
+		  ]
+		}
+	  }
+	  
+
 
