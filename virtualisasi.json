@@ -1,4 +1,143 @@
 {
-	"check_virtual" : "ada bro"
+	"check_virtual": "ada bro",
+	"tutorial_instalasi": {
+		"judul": "Tutorial Instalasi Ubuntu Server",
+		"deskripsi": "Panduan langkah demi langkah untuk menginstal Ubuntu Server.",
+		"langkah_langkah": [
+			{
+				"langkah": 1,
+				"deskripsi": "Unduh file gambar ISO Ubuntu Server dari situs web resmi Ubuntu."
+			},
+			{
+				"langkah": 2,
+				"deskripsi": "Buat media instalasi bootable menggunakan file ISO yang telah diunduh. Anda dapat menggunakan perangkat lunak seperti Rufus (di Windows) atau dd (di Linux)."
+			},
+			{
+				"langkah": 3,
+				"deskripsi": "Nyalakan komputer dan boot dari media instalasi yang telah Anda buat."
+			},
+			{
+				"langkah": 4,
+				"deskripsi": "Pilih opsi 'Install Ubuntu Server' dari menu boot."
+			},
+			{
+				"langkah": 5,
+				"deskripsi": "Pilih bahasa instalasi, zona waktu, dan bahasa papan ketik yang diinginkan."
+			},
+			{
+				"langkah": 6,
+				"deskripsi": "Atur koneksi jaringan jika diperlukan (opsional)."
+			},
+			{
+				"langkah": 7,
+				"deskripsi": "Pilih opsi untuk menginstal paket perangkat lunak tambahan jika diinginkan (opsional)."
+			},
+			{
+				"langkah": 8,
+				"deskripsi": "Pilih opsi 'Guided - use entire disk' atau sesuaikan partisi jika Anda memilih untuk melakukan konfigurasi manual."
+			},
+			{
+				"langkah": 9,
+				"deskripsi": "Buat akun pengguna dan atur nama host untuk server."
+			},
+			{
+				"langkah": 10,
+				"deskripsi": "Tunggu sampai proses instalasi selesai."
+			},
+			{
+				"langkah": 11,
+				"deskripsi": "Setelah selesai, Anda dapat reboot dan masuk ke sistem Ubuntu Server yang baru diinstal."
+			}
+		]
+	},
+	"langkah_langkah_ganti_username_password": [
+		{
+			"langkah": 1,
+			"deskripsi": "Buka terminal dan login ke server menggunakan username dan password yang sudah ada."
+		},
+		{
+			"langkah": 2,
+			"deskripsi": "Jalankan perintah `sudo passwd` untuk mengubah password root. Anda akan diminta memasukkan password yang baru."
+		},
+		{
+			"langkah": 3,
+			"deskripsi": "Masukkan password baru untuk akun root."
+		},
+		{
+			"langkah": 4,
+			"deskripsi": "Setelah berhasil mengubah password root, gunakan perintah `su -` untuk login sebagai root."
+		},
+		{
+			"langkah": 5,
+			"deskripsi": "Jalankan perintah `usermod -l nama_baru username_lama` untuk mengubah username."
+		},
+		{
+			"langkah": 6,
+			"deskripsi": "Setelah itu, jalankan perintah `usermod -d /home/nama_baru -m nama_baru` untuk mengubah direktori home dan nama pengguna."
+		},
+		{
+			"langkah": 7,
+			"deskripsi": "Terakhir, gunakan perintah `passwd nama_baru` untuk mengubah password baru untuk pengguna yang baru."
+		},
+		{
+			"langkah": 8,
+			"deskripsi": "Logout dari akun root dengan mengetik `exit`."
+		},
+		{
+			"langkah": 9,
+			"deskripsi": "Login kembali menggunakan username dan password baru."
+		}
+	],
+	"tutorial_koneksi_windows_ke_ubuntu": {
+		"judul": "Tutorial Koneksi dari Windows ke Ubuntu",
+		"deskripsi": "Langkah-langkah untuk terhubung dari mesin Windows ke mesin Ubuntu menggunakan SSH (Secure Shell).",
+		"langkah_langkah": [
+			{
+				"langkah": 1,
+				"deskripsi": "Pastikan Anda memiliki alamat IP mesin Ubuntu yang akan diakses dari mesin Windows."
+			},
+			{
+				"langkah": 2,
+				"deskripsi": "Buka Command Prompt di Windows."
+			},
+			{
+				"langkah": 3,
+				"deskripsi": "Jalankan perintah `ssh username@alamat_ip` di Command Prompt. Gantilah `username` dengan nama pengguna di mesin Ubuntu dan `alamat_ip` dengan alamat IP mesin Ubuntu."
+			},
+			{
+				"langkah": 4,
+				"deskripsi": "Anda akan diminta memasukkan password untuk akun pengguna di mesin Ubuntu. Masukkan password yang sesuai."
+			},
+			{
+				"langkah": 5,
+				"deskripsi": "Setelah berhasil login, Anda akan terhubung ke terminal mesin Ubuntu dari Windows."
+			}
+		]
+	},
+	"tutorial_ping_antar_virtual_machine": {
+		"judul": "Tutorial Tes Ping Antar Mesin Virtual",
+		"deskripsi": "Cara melakukan tes ping antara dua mesin virtual untuk memastikan konektivitas jaringan yang baik.",
+		"langkah_langkah": [
+			{
+				"langkah": 1,
+				"deskripsi": "Pastikan kedua mesin virtual sudah berjalan dan terhubung dalam jaringan yang sama."
+			},
+			{
+				"langkah": 2,
+				"deskripsi": "Buka terminal di masing-masing mesin virtual (Windows dan Ubuntu)."
+			},
+			{
+				"langkah": 3,
+				"deskripsi": "Di mesin Windows, jalankan perintah `ping alamat_ip_mesin_ubuntu`. Gantilah `alamat_ip_mesin_ubuntu` dengan alamat IP mesin Ubuntu."
+			},
+			{
+				"langkah": 4,
+				"deskripsi": "Di mesin Ubuntu, jalankan perintah `ping alamat_ip_mesin_windows`. Gantilah `alamat_ip_mesin_windows` dengan alamat IP mesin Windows."
+			},
+			{
+				"langkah": 5,
+				"deskripsi": "Perhatikan hasil ping untuk memastikan bahwa kedua mesin dapat saling terhubung dan tidak ada paket yang hilang."
+			}
+		]
+	}
 }
-
