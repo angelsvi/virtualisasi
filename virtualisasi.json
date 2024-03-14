@@ -138,6 +138,63 @@
 				"langkah": 5,
 				"deskripsi": "Perhatikan hasil ping untuk memastikan bahwa kedua mesin dapat saling terhubung dan tidak ada paket yang hilang."
 			}
+			
 		]
+	},
+		"tutorial_instal_webserver_mysql": {
+			"judul": "Tutorial Instalasi Web Server Apache dan MySQL di Ubuntu Server (VirtualBox)",
+			"deskripsi": "Panduan langkah demi langkah untuk menginstal server web Apache dan MySQL di Ubuntu Server yang berjalan di VirtualBox.",
+			"langkah_langkah": [
+				{
+					"langkah": 1,
+					"deskripsi": "Pastikan mesin virtual Ubuntu Server Anda sudah berjalan dan terhubung ke internet."
+				},
+				{
+					"langkah": 2,
+					"deskripsi": "Buka terminal di Ubuntu Server."
+				},
+				{
+					"langkah": 3,
+					"deskripsi": "Update repositori paket dengan menjalankan perintah: `sudo apt update`."
+				},
+				{
+					"langkah": 4,
+					"deskripsi": "Instal server web Apache dengan menjalankan perintah: `sudo apt install apache2`."
+				},
+				{
+					"langkah": 5,
+					"deskripsi": "Setelah Apache terinstal, pastikan layanan Apache diaktifkan dengan perintah: `sudo systemctl enable apache2`."
+				},
+				{
+					"langkah": 6,
+					"deskripsi": "Untuk memastikan Apache berjalan, jalankan perintah: `sudo systemctl start apache2`."
+				},
+				{
+					"langkah": 7,
+					"deskripsi": "Selanjutnya, instal MySQL Server dengan perintah: `sudo apt install mysql-server`."
+				},
+				{
+					"langkah": 8,
+					"deskripsi": "Setelah instalasi selesai, jalankan perintah: `sudo mysql_secure_installation` untuk mengamankan instalasi MySQL Anda."
+				},
+				{
+					"langkah": 9,
+					"deskripsi": "Ikuti petunjuk yang diberikan oleh perintah `mysql_secure_installation` untuk mengonfigurasi pengaturan keamanan MySQL."
+				},
+				{
+					"langkah": 10,
+					"deskripsi": "Setelah selesai mengamankan MySQL, pastikan layanan MySQL diaktifkan dengan perintah: `sudo systemctl enable mysql`."
+				},
+				{
+					"langkah": 11,
+					"deskripsi": "Terakhir, jalankan perintah: `sudo systemctl start mysql` untuk memulai layanan MySQL."
+				},
+				{
+					"langkah": 12,
+					"deskripsi": "Sekarang server web Apache dan MySQL sudah terinstal dan berjalan di mesin virtual Ubuntu Server Anda."
+				}
+			]
+		}
 	}
-}
+	
+
