@@ -1,0 +1,52 @@
+{
+    "tutorial": {
+      "judul": "Panduan Instalasi Docker dan Docker Compose Menggunakan Terminal",
+      "deskripsi": "Tutorial ini akan memandu Anda melalui langkah-langkah untuk menginstal Docker dan Docker Compose menggunakan terminal pada sistem operasi Linux.",
+      "langkah_langkah": [
+        {
+          "langkah": 1,
+          "deskripsi": "Buka terminal pada sistem Anda."
+        },
+        {
+          "langkah": 2,
+          "deskripsi": "Perbarui daftar paket sistem dengan perintah: sudo apt update"
+        },
+        {
+          "langkah": 3,
+          "deskripsi": "Instal paket yang diperlukan untuk mengunduh paket melalui HTTPS: sudo apt install apt-transport-https ca-certificates curl software-properties-common"
+        },
+        {
+          "langkah": 4,
+          "deskripsi": "Tambahkan kunci GPG resmi Docker: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -"
+        },
+        {
+          "langkah": 5,
+          "deskripsi": "Tambahkan repositori Docker ke sumber perangkat lunak: sudo add-apt-repository 'deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable'"
+        },
+        {
+          "langkah": 6,
+          "deskripsi": "Perbarui daftar paket sistem lagi setelah menambahkan repositori: sudo apt update"
+        },
+        {
+          "langkah": 7,
+          "deskripsi": "Instal Docker dengan menjalankan perintah: sudo apt install docker-ce"
+        },
+        {
+          "langkah": 8,
+          "deskripsi": "Verifikasi bahwa Docker telah diinstal dengan menjalankan kontainer hello-world: sudo docker run hello-world"
+        },
+        {
+          "langkah": 9,
+          "deskripsi": "Unduh versi terbaru Docker Compose: sudo curl -L \"https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose"
+        },
+        {
+          "langkah": 10,
+          "deskripsi": "Beri izin eksekusi pada binary Docker Compose yang diunduh: sudo chmod +x /usr/local/bin/docker-compose"
+        },
+        {
+          "langkah": 11,
+          "deskripsi": "Verifikasi bahwa Docker Compose telah diinstal dengan menjalankan perintah: docker-compose --version"
+        }
+      ]
+    }
+  }
